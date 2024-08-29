@@ -19,6 +19,7 @@ document.write(`
   <a id="Unit:EmoteState" class="fn" href="../Unit/EmoteState.html">EmoteState</a>
   <a id="Unit:GetAttackers" class="fn" href="../Unit/GetAttackers.html">GetAttackers</a>
   <a id="Unit:GetAura" class="fn" href="../Unit/GetAura.html">GetAura</a>
+  <a id="Unit:GetAuras" class="fn" href="../Unit/GetAuras.html">GetAuras</a>
   <a id="Unit:GetBaseSpellPower" class="fn" href="../Unit/GetBaseSpellPower.html">GetBaseSpellPower</a>
   <a id="Unit:GetCharmGUID" class="fn" href="../Unit/GetCharmGUID.html">GetCharmGUID</a>
   <a id="Unit:GetCharmerGUID" class="fn" href="../Unit/GetCharmerGUID.html">GetCharmerGUID</a>
@@ -52,6 +53,7 @@ document.write(`
   <a id="Unit:GetRace" class="fn" href="../Unit/GetRace.html">GetRace</a>
   <a id="Unit:GetRaceAsString" class="fn" href="../Unit/GetRaceAsString.html">GetRaceAsString</a>
   <a id="Unit:GetRaceMask" class="fn" href="../Unit/GetRaceMask.html">GetRaceMask</a>
+  <a id="Unit:GetShapeshiftForm" class="fn" href="../Unit/GetShapeshiftForm.html">GetShapeshiftForm</a>
   <a id="Unit:GetSpeed" class="fn" href="../Unit/GetSpeed.html">GetSpeed</a>
   <a id="Unit:GetSpeedRate" class="fn" href="../Unit/GetSpeedRate.html">GetSpeedRate</a>
   <a id="Unit:GetStandState" class="fn" href="../Unit/GetStandState.html">GetStandState</a>

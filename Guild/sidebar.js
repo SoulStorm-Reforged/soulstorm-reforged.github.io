@@ -10,6 +10,7 @@ document.write(`
   <a id="Guild:GetMemberCount" class="fn" href="../Guild/GetMemberCount.html">GetMemberCount</a>
   <a id="Guild:GetMembers" class="fn" href="../Guild/GetMembers.html">GetMembers</a>
   <a id="Guild:GetName" class="fn" href="../Guild/GetName.html">GetName</a>
+  <a id="Guild:IsLeader" class="fn" href="../Guild/IsLeader.html">IsLeader</a>
   <a id="Guild:SendPacket" class="fn" href="../Guild/SendPacket.html">SendPacket</a>
   <a id="Guild:SendPacketToRanked" class="fn" href="../Guild/SendPacketToRanked.html">SendPacketToRanked</a>
   <a id="Guild:SetBankTabText" class="fn" href="../Guild/SetBankTabText.html">SetBankTabText</a>

@@ -56,6 +56,7 @@ document.write(`
   <a id="Player:GetFreeTalentPoints" class="fn" href="../Player/GetFreeTalentPoints.html">GetFreeTalentPoints</a>
   <a id="Player:GetGMRank" class="fn" href="../Player/GetGMRank.html">GetGMRank</a>
   <a id="Player:GetGlyph" class="fn" href="../Player/GetGlyph.html">GetGlyph</a>
+  <a id="Player:GetGlyphs" class="fn" href="../Player/GetGlyphs.html">GetGlyphs</a>
   <a id="Player:GetGossipTextId" class="fn" href="../Player/GetGossipTextId.html">GetGossipTextId</a>
   <a id="Player:GetGroup" class="fn" href="../Player/GetGroup.html">GetGroup</a>
   <a id="Player:GetGroupInvite" class="fn" href="../Player/GetGroupInvite.html">GetGroupInvite</a>
@@ -99,6 +100,7 @@ document.write(`
   <a id="Player:GetSkillValue" class="fn" href="../Player/GetSkillValue.html">GetSkillValue</a>
   <a id="Player:GetSpecsCount" class="fn" href="../Player/GetSpecsCount.html">GetSpecsCount</a>
   <a id="Player:GetSpellCooldownDelay" class="fn" href="../Player/GetSpellCooldownDelay.html">GetSpellCooldownDelay</a>
+  <a id="Player:GetSpells" class="fn" href="../Player/GetSpells.html">GetSpells</a>
   <a id="Player:GetSubGroup" class="fn" href="../Player/GetSubGroup.html">GetSubGroup</a>
   <a id="Player:GetTeam" class="fn" href="../Player/GetTeam.html">GetTeam</a>
   <a id="Player:GetTotalPlayedTime" class="fn" href="../Player/GetTotalPlayedTime.html">GetTotalPlayedTime</a>
@@ -120,6 +122,7 @@ document.write(`
   <a id="Player:HasAchieved" class="fn" href="../Player/HasAchieved.html">HasAchieved</a>
   <a id="Player:HasAtLoginFlag" class="fn" href="../Player/HasAtLoginFlag.html">HasAtLoginFlag</a>
   <a id="Player:HasCasterSpec" class="fn" href="../Player/HasCasterSpec.html">HasCasterSpec</a>
+  <a id="Player:HasGlyph" class="fn" href="../Player/HasGlyph.html">HasGlyph</a>
   <a id="Player:HasHealSpec" class="fn" href="../Player/HasHealSpec.html">HasHealSpec</a>
   <a id="Player:HasItem" class="fn" href="../Player/HasItem.html">HasItem</a>
   <a id="Player:HasMeleeSpec" class="fn" href="../Player/HasMeleeSpec.html">HasMeleeSpec</a>
