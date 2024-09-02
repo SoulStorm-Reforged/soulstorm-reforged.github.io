@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Forge API</title>
+    <title>Eluna API</title>
 
     <link rel="stylesheet" type="text/css" href="static/main.css">
-    <link rel="stylesheet" type="text/css" href="static/dark.css">
 
     <link rel="shortcut icon" href="static/favicon.ico">
 
@@ -23,11 +22,11 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='index.html'><img src='static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='index.html'><img src='static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
             <h2>All Classes</h2>
-            <a class="mod " href="Achievement/index.html">Achievement</a><a class="mod " href="Aura/index.html">Aura</a><a class="mod " href="BattleGround/index.html">BattleGround</a><a class="mod " href="ChatHandler/index.html">ChatHandler</a><a class="mod " href="Corpse/index.html">Corpse</a><a class="mod " href="Creature/index.html">Creature</a><a class="mod " href="ForgeQuery/index.html">ForgeQuery</a><a class="mod " href="GameObject/index.html">GameObject</a><a class="mod " href="Global/index.html">Global</a><a class="mod " href="Group/index.html">Group</a><a class="mod " href="Guild/index.html">Guild</a><a class="mod " href="Item/index.html">Item</a><a class="mod " href="ItemTemplate/index.html">ItemTemplate</a><a class="mod " href="Loot/index.html">Loot</a><a class="mod " href="Map/index.html">Map</a><a class="mod " href="Object/index.html">Object</a><a class="mod " href="Player/index.html">Player</a><a class="mod " href="Quest/index.html">Quest</a><a class="mod " href="Roll/index.html">Roll</a><a class="mod " href="Spell/index.html">Spell</a><a class="mod " href="SpellInfo/index.html">SpellInfo</a><a class="mod " href="Ticket/index.html">Ticket</a><a class="mod " href="Unit/index.html">Unit</a><a class="mod " href="Vehicle/index.html">Vehicle</a><a class="mod " href="WorldObject/index.html">WorldObject</a><a class="mod " href="WorldPacket/index.html">WorldPacket</a>
+            <a class="mod " href="Aura/index.html">Aura</a><a class="mod " href="BattleGround/index.html">BattleGround</a><a class="mod " href="Corpse/index.html">Corpse</a><a class="mod " href="Creature/index.html">Creature</a><a class="mod " href="ElunaQuery/index.html">ElunaQuery</a><a class="mod " href="GameObject/index.html">GameObject</a><a class="mod " href="Global/index.html">Global</a><a class="mod " href="Group/index.html">Group</a><a class="mod " href="Guild/index.html">Guild</a><a class="mod " href="Item/index.html">Item</a><a class="mod " href="Map/index.html">Map</a><a class="mod " href="Object/index.html">Object</a><a class="mod " href="Player/index.html">Player</a><a class="mod " href="Quest/index.html">Quest</a><a class="mod " href="Spell/index.html">Spell</a><a class="mod " href="Unit/index.html">Unit</a><a class="mod " href="Vehicle/index.html">Vehicle</a><a class="mod " href="WorldObject/index.html">WorldObject</a><a class="mod " href="WorldPacket/index.html">WorldPacket</a>
         
     </div>
 </section>
@@ -45,7 +44,7 @@
 
 <section id='main' class="content mod">
     <h1 class='fqn'>
-        Forge API Documentation
+        Eluna API Documentation
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -56,76 +55,54 @@
 
     
     <div class='docblock'>
-        <h1 id="the-forge-engine-api" class='section-header'>
-            <a href="#the-forge-engine-api">The Forge Lua Engine&copy; API</a>
+        <h1 id="the-eluna-engine-api" class='section-header'>
+            <a href="#the-eluna-engine-api">The Eluna Lua Engine&copy; API</a>
         </h1>
         <p>
-            The Forge Lua Engine&copy; API allows you to add your own Lua code to be executed when certain events (called "hooks") occur.
+            The Eluna Lua Engine&copy; API allows you to add your own Lua code to be executed when certain events (called "hooks") occur.
         </p>
         <p>
             Add a new in-game command, give life to creatures with new AI, or even light players who try to duel on fire!
             If the hook exists, you can script it.
         </p>
 
-        <h2 id="about-forge" class='section-header'>
-            <a href="#about-forge">About Forge</a>
+        <h2 id="about-eluna" class='section-header'>
+            <a href="#about-eluna">About Eluna</a>
         </h2>
         <p>
-            Forge is a <a href="http://www.lua.org/">Lua</a> engine for World of Warcraft emulators.
-            These pages are for <a href="https://www.azerothcore.org/">AzerothCore</a>'s version, but Forge also supports
-            <a href="https://cmangos.net/">CMaNGOS</a>/<a href="https://www.getmangos.eu/">MaNGOS</a> and <a href="https://www.trinitycore.org/">TrinityCore</a>.
+            Eluna is a <a href="http://www.lua.org/">Lua</a> engine for World of Warcraft emulators.
+            Eluna supports <a href="http://cmangos.net/">CMaNGOS</a>/<a href="https://www.getmangos.eu/home.php">MaNGOS</a>
+            and <a href="http://www.trinitycore.org/">TrinityCore</a>.
         </p>
         <p>
-            If you come from the TypeScript / JavaScript world, or would prefer to use a typed language instead of Lua, check out <a href="https://github.com/azerothcore/forge-ts">forge-ts</a>!
+            To get Eluna, simply clone your favorite version of MaNGOS or Trinity from
+            <a href="https://github.com/ElunaLuaEngine">our Github account</a>.
+            Each fork there has Eluna already integrated, so you just need to compile and go!
         </p>
         <p>
-            You can get support in the <code>#forge-ac</code> channel of <a href="https://discord.com/invite/V3Dkwxvh">AzerothCore's Discord server</a>.
-        </p>
-        <p>
-            You can also join the <a href="https://discord.com/invite/bjkCVWqqfX">official Forge Discord server</a>, where you'll be able to find resources, releases and support provided by the Forge community.
+            Join our community <a href="https://discord.gg/bjkCVWqqfX">Discord</a> server to keep up with Eluna development and user provided support.
         </p>
 
-        <h2 id="installation" class='section-header'>
-            <a href="#installation">How to Install</a>
-        </h2>
-        <p>
-            <ol>
-                <li>If you haven't already, clone AzerothCore from <a href="https://github.com/azerothcore/azerothcore-wotlk">our GitHub repository</a></li>
-                <li>Go to the modules directory and run the following command: <pre>git clone https://github.com/azerothcore/mod-forge.git mod-forge</pre></li>
-                <li>Run CMake</li>
-                <li>Build AzerothCore</li>
-            </ol>
-        </p>
-
-        <!-- <h2 id="tutorials-and-guides" class='section-header'>
+        <h2 id="tutorials-and-guides" class='section-header'>
             <a href="#tutorials-and-guides">Tutorials & Guides</a>
         </h2>
         <p>
             We haven't written tutorials yet, but when we do, we'll put the links here.
-        </p> -->
+        </p>
 
         <h2 id="about-this-documentation" class='section-header'>
-            <a href="#about-this-documentation">About this Documentation</a>
+            <a href="#about-this-documentation">About this documentation</a>
         </h2>
         <p>
             The layout, CSS, and Javascript code for this documentation was borrowed from <a href="http://doc.rust-lang.org/">doc.rust-lang.org</a>.
         </p>
         <p>
-            The documentation generator was originally written by <a href="https://github.com/Patman64">Patman64</a> and is maintained by the Forge team.
+            The documentation generator was originally written by <a href="https://github.com/Patman64">Patman64</a> and is maintained by the Eluna team.
         </p>
     </div>
 
     <h2 id='modules' class='section-header'><a href="#modules">Classes</a></h2>
     <table>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Fully Documented'></a>
-                <a class='mod' href='Achievement/index.html'>Achievement</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
         <tr>
             <td>
                 <a class='stability Stable' title='Fully Documented'></a>
@@ -148,15 +125,6 @@ has been cast.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Fully Documented'></a>
-                <a class='mod' href='ChatHandler/index.html'>ChatHandler</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Fully Documented'></a>
                 <a class='mod' href='Corpse/index.html'>Corpse</a>
             </td>
             <td class='docblock short'>
@@ -165,7 +133,7 @@ has been cast.</p>
         </tr>
         <tr>
             <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
+                <a class='stability Stable' title='Fully Documented'></a>
                 <a class='mod' href='Creature/index.html'>Creature</a>
             </td>
             <td class='docblock short'>
@@ -175,7 +143,7 @@ has been cast.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Fully Documented'></a>
-                <a class='mod' href='ForgeQuery/index.html'>ForgeQuery</a>
+                <a class='mod' href='ElunaQuery/index.html'>ElunaQuery</a>
             </td>
             <td class='docblock short'>
                 <p>The result of a database query.</p>
@@ -183,7 +151,7 @@ has been cast.</p>
         </tr>
         <tr>
             <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
+                <a class='stability Stable' title='Fully Documented'></a>
                 <a class='mod' href='GameObject/index.html'>GameObject</a>
             </td>
             <td class='docblock short'>
@@ -192,7 +160,7 @@ has been cast.</p>
         </tr>
         <tr>
             <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
+                <a class='stability Stable' title='Fully Documented'></a>
                 <a class='mod' href='Global/index.html'>Global</a>
             </td>
             <td class='docblock short'>
@@ -210,7 +178,7 @@ has been cast.</p>
         </tr>
         <tr>
             <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
+                <a class='stability Stable' title='Fully Documented'></a>
                 <a class='mod' href='Guild/index.html'>Guild</a>
             </td>
             <td class='docblock short'>
@@ -219,29 +187,11 @@ has been cast.</p>
         </tr>
         <tr>
             <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
+                <a class='stability Stable' title='Fully Documented'></a>
                 <a class='mod' href='Item/index.html'>Item</a>
             </td>
             <td class='docblock short'>
                 <p>Inherits all methods from: <a class="mod" href="Object/index.html">Object</a></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Fully Documented'></a>
-                <a class='mod' href='ItemTemplate/index.html'>ItemTemplate</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Fully Undocumented'></a>
-                <a class='mod' href='Loot/index.html'>Loot</a>
-            </td>
-            <td class='docblock short'>
-                <p>Inherits all methods from: none</p>
             </td>
         </tr>
         <tr>
@@ -283,34 +233,7 @@ has been cast.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Fully Documented'></a>
-                <a class='mod' href='Roll/index.html'>Roll</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
                 <a class='mod' href='Spell/index.html'>Spell</a>
-            </td>
-            <td class='docblock short'>
-                <p>An instance of a spell, created when the spell is cast by a <a class="mod" href="Unit/index.html">Unit</a>.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Unstable' title='Partially Documented'></a>
-                <a class='mod' href='SpellInfo/index.html'>SpellInfo</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Fully Documented'></a>
-                <a class='mod' href='Ticket/index.html'>Ticket</a>
             </td>
             <td class='docblock short'>
                 <p>An instance of a spell, created when the spell is cast by a <a class="mod" href="Unit/index.html">Unit</a>.</p>
@@ -398,6 +321,6 @@ has been cast.</p>
 <script src="static/main.js"></script>
 <script async src="search-index.js"></script>
 <center>Generated on <script src="date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

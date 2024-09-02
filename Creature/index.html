@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Creature class in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Creature class in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Creature - Forge API</title>
+    <title>Creature - Eluna API</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
 
@@ -69,11 +68,11 @@
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='AllLootRemoved.html'>AllLootRemoved</a>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='AddThreat.html'>AddThreat</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Adds threat to the <a class="mod" href="../Creature/index.html">Creature</a> from the victim.</p>
             </td>
         </tr>
         <tr>
@@ -175,10 +174,46 @@
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='ClearFixate.html'>ClearFixate</a>
+            </td>
+            <td class='docblock short'>
+                <p>Clears the <a class="mod" href="../Creature/index.html">Creature</a>'s fixated target.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='ClearThreat.html'>ClearThreat</a>
+            </td>
+            <td class='docblock short'>
+                <p>Clear the threat of a <a class="mod" href="../Unit/index.html">Unit</a> in this <a class="mod" href="../Creature/index.html">Creature</a>'s threat list.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='ClearThreatList.html'>ClearThreatList</a>
+            </td>
+            <td class='docblock short'>
+                <p>Clear the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list. This will cause evading.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='DespawnOrUnsummon.html'>DespawnOrUnsummon</a>
             </td>
             <td class='docblock short'>
                 <p>Despawn this <a class="mod" href="../Creature/index.html">Creature</a>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='FixateTarget.html'>FixateTarget</a>
+            </td>
+            <td class='docblock short'>
+                <p>Forces the <a class="mod" href="../Creature/index.html">Creature</a> to fixate on the <a class="mod" href="../Unit/index.html">Unit</a>, regardless of threat. Requires the <a class="mod" href="../Unit/index.html">Unit</a> to be in the threat list.</p>
             </td>
         </tr>
         <tr>
@@ -234,6 +269,15 @@
             </td>
             <td class='docblock short'>
                 <p>Returns the aggro range of the <a class="mod" href="../Creature/index.html">Creature</a> for <code>target</code>.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetAttackDistance.html'>GetAttackDistance</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns the effective aggro range of the <a class="mod" href="../Creature/index.html">Creature</a> for <code>target</code>.</p>
             </td>
         </tr>
         <tr>
@@ -311,20 +355,11 @@
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='GetLoot.html'>GetLoot</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetLootMode.html'>GetLootMode</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the loot mode for the <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
@@ -360,7 +395,7 @@
                 <a class='fn' href='GetRank.html'>GetRank</a>
             </td>
             <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s rank.</p>
+                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s rank as defined in the creature template.</p>
             </td>
         </tr>
         <tr>
@@ -402,19 +437,10 @@
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetUnitFlags.html'>GetUnitFlags</a>
+                <a class='fn' href='GetThreat.html'>GetThreat</a>
             </td>
             <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s Unit flags.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetUnitFlagsTwo.html'>GetUnitFlagsTwo</a>
-            </td>
-            <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Creature/index.html">Creature</a>'s Unit flags 2.</p>
+                <p>Returns the threat of a <a class="mod" href="../Unit/index.html">Unit</a> in this <a class="mod" href="../Creature/index.html">Creature</a>'s threat list.</p>
             </td>
         </tr>
         <tr>
@@ -655,10 +681,28 @@
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='RemoveFromWorld.html'>RemoveFromWorld</a>
+            </td>
+            <td class='docblock short'>
+                <p>Removes <a class="mod" href="../Creature/index.html">Creature</a> from the world</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='RemoveLootMode.html'>RemoveLootMode</a>
             </td>
             <td class='docblock short'>
                 <p>Removes specified loot mode from <a class="mod" href="../Creature/index.html">Creature</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='ResetAllThreat.html'>ResetAllThreat</a>
+            </td>
+            <td class='docblock short'>
+                <p>Resets the <a class="mod" href="../Creature/index.html">Creature</a>'s threat list, setting all threat targets' threat to 0.</p>
             </td>
         </tr>
         <tr>
@@ -781,11 +825,11 @@
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetLootMode.html'>SetLootMode</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Sets the loot mode for the <a class="mod" href="../Creature/index.html">Creature</a>.</p>
             </td>
         </tr>
         <tr>
@@ -840,24 +884,6 @@
             </td>
             <td class='docblock short'>
                 <p>Sets the time it takes for the <a class="mod" href="../Creature/index.html">Creature</a> to respawn when killed.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='SetUnitFlags.html'>SetUnitFlags</a>
-            </td>
-            <td class='docblock short'>
-                <p>Sets the <a class="mod" href="../Creature/index.html">Creature</a>'s Unit flags to <code>flags</code>.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='SetUnitFlagsTwo.html'>SetUnitFlagsTwo</a>
-            </td>
-            <td class='docblock short'>
-                <p>Sets the <a class="mod" href="../Creature/index.html">Creature</a>'s Unit flags2 to <code>flags</code>.</p>
             </td>
         </tr>
         <tr>
@@ -933,6 +959,6 @@
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

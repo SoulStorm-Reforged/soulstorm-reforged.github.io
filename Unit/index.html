@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Unit class in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Unit class in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Unit - Forge API</title>
+    <title>Unit - Eluna API</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
 
@@ -69,10 +68,19 @@
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='AddThreat.html'>AddThreat</a>
+                <a class='fn' href='AddFlatStatModifier.html'>AddFlatStatModifier</a>
             </td>
             <td class='docblock short'>
-                <p>Adds threat to the <a class="mod" href="../Unit/index.html">Unit</a> from the victim.</p>
+                <p>Modifies a flat amount of a specific stat of the <a class="mod" href="../Unit/index.html">Unit</a></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='AddPctStatModifier.html'>AddPctStatModifier</a>
+            </td>
+            <td class='docblock short'>
+                <p>Modifies a percentage amount of a specific stat of the <a class="mod" href="../Unit/index.html">Unit</a></p>
             </td>
         </tr>
         <tr>
@@ -100,6 +108,15 @@
             </td>
             <td class='docblock short'>
                 <p>The <a class="mod" href="../Unit/index.html">Unit</a> stops attacking its target</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='CanModifyStats.html'>CanModifyStats</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns whether or not the <a class="mod" href="../Unit/index.html">Unit</a> can have stat modifiers applied.</p>
             </td>
         </tr>
         <tr>
@@ -137,15 +154,6 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>Clears the <a class="mod" href="../Unit/index.html">Unit</a>'s combat</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='ClearThreatList.html'>ClearThreatList</a>
-            </td>
-            <td class='docblock short'>
-                <p>Clears the <a class="mod" href="../Unit/index.html">Unit</a>'s threat list.</p>
             </td>
         </tr>
         <tr>
@@ -204,6 +212,15 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
         </tr>
         <tr>
             <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='DisableMelee.html'>DisableMelee</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='Dismount.html'>Dismount</a>
             </td>
@@ -223,28 +240,10 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetAttackers.html'>GetAttackers</a>
-            </td>
-            <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s attackers.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetAura.html'>GetAura</a>
             </td>
             <td class='docblock short'>
                 <p>Returns the <a class="mod" href="../Aura/index.html">Aura</a> of the given spell entry on the <a class="mod" href="../Unit/index.html">Unit</a> or nil.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetAuras.html'>GetAuras</a>
-            </td>
-            <td class='docblock short'>
-                <p>Returns a table of all <a class="mod" href="../Aura/index.html">Aura</a>'s uf the <a class="mod" href="../Unit/index.html">Unit</a></p>
             </td>
         </tr>
         <tr>
@@ -547,28 +546,10 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetShapeshiftForm.html'>GetShapeshiftForm</a>
-            </td>
-            <td class='docblock short'>
-                <p>Returns Shapeshift form of the <a class="mod" href="../Unit/index.html">Unit</a>.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetSpeed.html'>GetSpeed</a>
             </td>
             <td class='docblock short'>
                 <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s speed of given [UnitMoveType].</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetSpeedRate.html'>GetSpeedRate</a>
-            </td>
-            <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s speed rate of given [UnitMoveType].</p>
             </td>
         </tr>
         <tr>
@@ -587,15 +568,6 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>Returns <a class="mod" href="../Unit/index.html">Unit</a>'s specified stat</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetThreatList.html'>GetThreatList</a>
-            </td>
-            <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s threat list.</p>
             </td>
         </tr>
         <tr>
@@ -632,15 +604,6 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>Returns the <a class="mod" href="../Unit/index.html">Unit</a>'s current victim target or nil.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='HandleStatModifier.html'>HandleStatModifier</a>
-            </td>
-            <td class='docblock short'>
-                <p>The <a class="mod" href="../Unit/index.html">Unit</a> modifies a specific stat</p>
             </td>
         </tr>
         <tr>
@@ -781,6 +744,15 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsFlying.html'>IsFlying</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the <a class="mod" href="../Unit/index.html">Unit</a> is flying, false otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsFullHealth.html'>IsFullHealth</a>
             </td>
             <td class='docblock short'>
@@ -848,6 +820,15 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>Returns true if the <a class="mod" href="../Unit/index.html">Unit</a> is mounted.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsMoving.html'>IsMoving</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the <a class="mod" href="../Unit/index.html">Unit</a> is moving, false otherwise.</p>
             </td>
         </tr>
         <tr>
@@ -988,6 +969,15 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='IsVisible.html'>IsVisible</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns true if the <a class="mod" href="../Unit/index.html">Unit</a> is visible, false otherwise.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='Kill.html'>Kill</a>
             </td>
             <td class='docblock short'>
@@ -1001,15 +991,6 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>modifies the <a class="mod" href="../Unit/index.html">Unit</a>'s power amount for the given power type.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='ModifyThreatPct.html'>ModifyThreatPct</a>
-            </td>
-            <td class='docblock short'>
-                <p>Modifies threat in pct to the <a class="mod" href="../Unit/index.html">Unit</a> from the victim</p>
             </td>
         </tr>
         <tr>
@@ -1176,6 +1157,42 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
         </tr>
         <tr>
             <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveBindSightAuras.html'>RemoveBindSightAuras</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RemoveCharmAuras.html'>RemoveCharmAuras</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RestoreDisplayId.html'>RestoreDisplayId</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='RestoreFaction.html'>RestoreFaction</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
                 <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SendChatMessageToPlayer.html'>SendChatMessageToPlayer</a>
             </td>
@@ -1217,6 +1234,15 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
             </td>
             <td class='docblock short'>
                 <p>The <a class="mod" href="../Unit/index.html">Unit</a> will yell the message</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetCanFly.html'>SetCanFly</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
             </td>
         </tr>
         <tr>
@@ -1450,17 +1476,7 @@ See also <a class="fn" href="../Unit/CastSpell.html">Unit:CastSpell</a>.</p>
                 <a class='fn' href='SetSpeed.html'>SetSpeed</a>
             </td>
             <td class='docblock short'>
-                <p>Sets the <a class="mod" href="../Unit/index.html">Unit</a>'s speed of given [UnitMoveType] to given speed.
-If forced, packets sent to clients forcing the visual change.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='SetSpeedRate.html'>SetSpeedRate</a>
-            </td>
-            <td class='docblock short'>
-                <p>Sets the <a class="mod" href="../Unit/index.html">Unit</a>'s speed rate of given [UnitMoveType] to given rate.
+                <p>Sets the <a class="mod" href="../Unit/index.html">Unit</a>'s speed of given [UnitMoveType] to given rate.
 If forced, packets sent to clients forcing the visual change.</p>
             </td>
         </tr>
@@ -1471,6 +1487,24 @@ If forced, packets sent to clients forcing the visual change.</p>
             </td>
             <td class='docblock short'>
                 <p>Sets the <a class="mod" href="../Unit/index.html">Unit</a>'s stand state</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetStunned.html'>SetStunned</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='fn' href='SetVisible.html'>SetVisible</a>
+            </td>
+            <td class='docblock short'>
+                <p></p>
             </td>
         </tr>
         <tr>
@@ -1537,6 +1571,6 @@ If forced, packets sent to clients forcing the visual change.</p>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

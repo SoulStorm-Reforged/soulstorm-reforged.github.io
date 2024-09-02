@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Global class in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Global class in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Global - Forge API</title>
+    <title>Global - Eluna API</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
 
@@ -90,7 +89,7 @@
                 <a class='fn' href='AuthDBQuery.html'>AuthDBQuery</a>
             </td>
             <td class='docblock short'>
-                <p>Executes a SQL query on the login database and returns an <a class="mod" href="../ForgeQuery/index.html">ForgeQuery</a>.</p>
+                <p>Executes a SQL query on the login database and returns an <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a>.</p>
             </td>
         </tr>
         <tr>
@@ -99,7 +98,7 @@
                 <a class='fn' href='AuthDBQueryAsync.html'>AuthDBQueryAsync</a>
             </td>
             <td class='docblock short'>
-                <p>Executes an asynchronous SQL query on the character database and passes an <a class="mod" href="../ForgeQuery/index.html">ForgeQuery</a> to a callback function.</p>
+                <p>Initiates an asynchronous SQL query on the login database with a callback function.</p>
             </td>
         </tr>
         <tr>
@@ -126,7 +125,7 @@
                 <a class='fn' href='CharDBQuery.html'>CharDBQuery</a>
             </td>
             <td class='docblock short'>
-                <p>Executes a SQL query on the character database and returns an <a class="mod" href="../ForgeQuery/index.html">ForgeQuery</a>.</p>
+                <p>Executes a SQL query on the character database and returns an <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a>.</p>
             </td>
         </tr>
         <tr>
@@ -135,7 +134,7 @@
                 <a class='fn' href='CharDBQueryAsync.html'>CharDBQueryAsync</a>
             </td>
             <td class='docblock short'>
-                <p>Executes an asynchronous SQL query on the character database and passes an <a class="mod" href="../ForgeQuery/index.html">ForgeQuery</a> to a callback function.</p>
+                <p>Initiates an asynchronous SQL query on the character database with a callback function.</p>
             </td>
         </tr>
         <tr>
@@ -276,28 +275,10 @@
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='ClearTicketEvents.html'>ClearTicketEvents</a>
-            </td>
-            <td class='docblock short'>
-                <p>Unbinds event handlers for either all <a class="mod" href="../Ticket/index.html">Ticket</a> events, or one type of <a class="mod" href="../Ticket/index.html">Ticket</a> event.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='ClearUniqueCreatureEvents.html'>ClearUniqueCreatureEvents</a>
             </td>
             <td class='docblock short'>
                 <p>Unbinds event handlers for either all of a <a class="mod" href="../Creature/index.html">Creature</a>'s events, or one type of event.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='ClearUnitEvents.html'>ClearUnitEvents</a>
-            </td>
-            <td class='docblock short'>
-                <p>Unbinds event handlers for either all <a class="mod" href="../Unit/index.html">Unit</a> events, or one type of <a class="mod" href="../Unit/index.html">Unit</a> event.</p>
             </td>
         </tr>
         <tr>
@@ -392,15 +373,6 @@
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='GetDungeonEntrancePosition.html'>GetDungeonEntrancePosition</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
                 <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetGUIDEntry.html'>GetGUIDEntry</a>
             </td>
@@ -438,16 +410,6 @@
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetGossipMenuOptionLocale.html'>GetGossipMenuOptionLocale</a>
-            </td>
-            <td class='docblock short'>
-                <p>Gets the localized OptionText and BoxText for a specific gossip menu option.
-If the text for the specified locale is not found, it returns the default text.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetGuildByLeaderGUID.html'>GetGuildByLeaderGUID</a>
             </td>
             <td class='docblock short'>
@@ -466,16 +428,6 @@ If the text for the specified locale is not found, it returns the default text.<
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetItemDisplayId.html'>GetItemDisplayId</a>
-            </td>
-            <td class='docblock short'>
-                <p>Retrieves the DisplayId for a specific item entry.
-This method fetches the <code>DisplayId</code> for an item based on its entry ID from the <code>item_template</code> table.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetItemGUID.html'>GetItemGUID</a>
             </td>
             <td class='docblock short'>
@@ -489,15 +441,6 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
             </td>
             <td class='docblock short'>
                 <p>Returns an chat link for an <a class="mod" href="../Item/index.html">Item</a>.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='GetItemTemplate.html'>GetItemTemplate</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
             </td>
         </tr>
         <tr>
@@ -525,17 +468,6 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
             </td>
             <td class='docblock short'>
                 <p>Builds a <a class="mod" href="../GameObject/index.html">GameObject</a>'s GUID.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='GetOwnerHalaa.html'>GetOwnerHalaa</a>
-            </td>
-            <td class='docblock short'>
-                <p>Gets the faction which is the current owner of Halaa in Nagrand
-0 = Alliance
-1 = Horde</p>
             </td>
         </tr>
         <tr>
@@ -586,6 +518,15 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
+                <a class='fn' href='GetPlayersOnMap.html'>GetPlayersOnMap</a>
+            </td>
+            <td class='docblock short'>
+                <p>Returns a table with all the current <a class="mod" href="../Player/index.html">Player</a>s on the states map.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetQuest.html'>GetQuest</a>
             </td>
             <td class='docblock short'>
@@ -594,20 +535,11 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetRealmID.html'>GetRealmID</a>
             </td>
             <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='GetSpellInfo.html'>GetSpellInfo</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
+                <p>Returns emulator .conf RealmID</p>
             </td>
         </tr>
         <tr>
@@ -625,7 +557,7 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
                 <a class='fn' href='GetStateMap.html'>GetStateMap</a>
             </td>
             <td class='docblock short'>
-                <p>Returns the <a class="mod" href="../Map/index.html">Map</a> pointer of the Lua state. Returns null for the "World" state. </p>
+                <p>Returns the <a class="mod" href="../Map/index.html">Map</a> pointer of the Lua state. Returns null for the "World" state.</p>
             </td>
         </tr>
         <tr>
@@ -658,15 +590,6 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='HttpRequest.html'>HttpRequest</a>
-            </td>
-            <td class='docblock short'>
-                <p>Performs a non-blocking HTTP request.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsBagPos.html'>IsBagPos</a>
             </td>
             <td class='docblock short'>
@@ -688,7 +611,7 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
                 <a class='fn' href='IsCompatibilityMode.html'>IsCompatibilityMode</a>
             </td>
             <td class='docblock short'>
-                <p>Returns <code>true</code> if Forge is in compatibility mode, <code>false</code> if in multistate.</p>
+                <p>Returns <code>true</code> if Eluna is in compatibility mode, <code>false</code> if in multistate.</p>
             </td>
         </tr>
         <tr>
@@ -901,10 +824,10 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='RegisterTicketEvent.html'>RegisterTicketEvent</a>
+                <a class='fn' href='RegisterSpellEvent.html'>RegisterSpellEvent</a>
             </td>
             <td class='docblock short'>
-                <p>Registers a <a class="mod" href="../Ticket/index.html">Ticket</a> event handler.</p>
+                <p>Registers a <a class="mod" href="../Spell/index.html">Spell</a> event handler.</p>
             </td>
         </tr>
         <tr>
@@ -919,16 +842,7 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='RegisterUnitEvent.html'>RegisterUnitEvent</a>
-            </td>
-            <td class='docblock short'>
-                <p>Registers a <a class="mod" href="../Unit/index.html">Unit</a> event handler.</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='ReloadForge.html'>ReloadForge</a>
+                <a class='fn' href='ReloadEluna.html'>ReloadEluna</a>
             </td>
             <td class='docblock short'>
                 <p>Reloads the Lua engine.</p>
@@ -991,17 +905,6 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
         <tr>
             <td>
                 <a class='stability Stable' title='Documented'></a>
-                <a class='fn' href='SetOwnerHalaa.html'>SetOwnerHalaa</a>
-            </td>
-            <td class='docblock short'>
-                <p>Sets the owner of Halaa in Nagrand to the respective faction
-0 = Alliance
-1 = Horde</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='StartGameEvent.html'>StartGameEvent</a>
             </td>
             <td class='docblock short'>
@@ -1050,7 +953,7 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
                 <a class='fn' href='WorldDBQuery.html'>WorldDBQuery</a>
             </td>
             <td class='docblock short'>
-                <p>Executes a SQL query on the world database and returns an <a class="mod" href="../ForgeQuery/index.html">ForgeQuery</a>.</p>
+                <p>Executes a SQL query on the world database and returns an <a class="mod" href="../ElunaQuery/index.html">ElunaQuery</a>.</p>
             </td>
         </tr>
         <tr>
@@ -1059,7 +962,7 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
                 <a class='fn' href='WorldDBQueryAsync.html'>WorldDBQueryAsync</a>
             </td>
             <td class='docblock short'>
-                <p>Executes an asynchronous SQL query on the world database and passes an <a class="mod" href="../ForgeQuery/index.html">ForgeQuery</a> to a callback function.</p>
+                <p>Initiates an asynchronous SQL query on the world database with a callback function.</p>
             </td>
         </tr>
         <tr>
@@ -1162,6 +1065,6 @@ This method fetches the <code>DisplayId</code> for an item based on its entry ID
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

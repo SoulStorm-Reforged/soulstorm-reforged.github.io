@@ -11,11 +11,14 @@ document.write(`
   <a id="Item:GetCount" class="fn" href="../Item/GetCount.html">GetCount</a>
   <a id="Item:GetDisplayId" class="fn" href="../Item/GetDisplayId.html">GetDisplayId</a>
   <a id="Item:GetEnchantmentId" class="fn" href="../Item/GetEnchantmentId.html">GetEnchantmentId</a>
+  <a id="Item:GetExtraFlags" class="fn" href="../Item/GetExtraFlags.html">GetExtraFlags</a>
+  <a id="Item:GetFlags" class="fn" href="../Item/GetFlags.html">GetFlags</a>
+  <a id="Item:GetFlags2" class="fn" href="../Item/GetFlags2.html">GetFlags2</a>
   <a id="Item:GetInventoryType" class="fn" href="../Item/GetInventoryType.html">GetInventoryType</a>
+  <a id="Item:GetItemId" class="fn" href="../Item/GetItemId.html">GetItemId</a>
   <a id="Item:GetItemLevel" class="fn" href="../Item/GetItemLevel.html">GetItemLevel</a>
   <a id="Item:GetItemLink" class="fn" href="../Item/GetItemLink.html">GetItemLink</a>
   <a id="Item:GetItemSet" class="fn" href="../Item/GetItemSet.html">GetItemSet</a>
-  <a id="Item:GetItemTemplate" class="fn" href="../Item/GetItemTemplate.html">GetItemTemplate</a>
   <a id="Item:GetMaxStackCount" class="fn" href="../Item/GetMaxStackCount.html">GetMaxStackCount</a>
   <a id="Item:GetName" class="fn" href="../Item/GetName.html">GetName</a>
   <a id="Item:GetOwner" class="fn" href="../Item/GetOwner.html">GetOwner</a>
@@ -45,6 +48,7 @@ document.write(`
   <a id="Item:IsNotBoundToPlayer" class="fn" href="../Item/IsNotBoundToPlayer.html">IsNotBoundToPlayer</a>
   <a id="Item:IsNotEmptyBag" class="fn" href="../Item/IsNotEmptyBag.html">IsNotEmptyBag</a>
   <a id="Item:IsPotion" class="fn" href="../Item/IsPotion.html">IsPotion</a>
+  <a id="Item:IsRefundExpired" class="fn" href="../Item/IsRefundExpired.html">IsRefundExpired</a>
   <a id="Item:IsSoulBound" class="fn" href="../Item/IsSoulBound.html">IsSoulBound</a>
   <a id="Item:IsWeaponVellum" class="fn" href="../Item/IsWeaponVellum.html">IsWeaponVellum</a>
   <a id="Item:SaveToDB" class="fn" href="../Item/SaveToDB.html">SaveToDB</a>

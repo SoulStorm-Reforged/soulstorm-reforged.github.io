@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Global:RegisterPlayerEvent method in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Global:RegisterPlayerEvent method in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Global:RegisterPlayerEvent - Forge</title>
+    <title>Global:RegisterPlayerEvent - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
     <h2>Global Methods</h2>
@@ -83,17 +82,17 @@ enum PlayerEvents
     PLAYER_EVENT_ON_DUEL_REQUEST            =     9,        // (event, target, challenger)
     PLAYER_EVENT_ON_DUEL_START              =     10,       // (event, player1, player2)
     PLAYER_EVENT_ON_DUEL_END                =     11,       // (event, winner, loser, type)
-    PLAYER_EVENT_ON_GIVE_XP                 =     12,       // (event, player, amount, victim, source) - Can return new XP amount
+    PLAYER_EVENT_ON_GIVE_XP                 =     12,       // (event, player, amount, victim) - Can return new XP amount
     PLAYER_EVENT_ON_LEVEL_CHANGE            =     13,       // (event, player, oldLevel)
     PLAYER_EVENT_ON_MONEY_CHANGE            =     14,       // (event, player, amount) - Can return new money amount
-    PLAYER_EVENT_ON_REPUTATION_CHANGE       =     15,       // (event, player, factionId, standing, incremental) - Can return new standing -> if standing == -1, it will prevent default action (rep gain)
+    PLAYER_EVENT_ON_REPUTATION_CHANGE       =     15,       // (event, player, factionId, standing, incremental) - Can return new standing
     PLAYER_EVENT_ON_TALENTS_CHANGE          =     16,       // (event, player, points)
     PLAYER_EVENT_ON_TALENTS_RESET           =     17,       // (event, player, noCost)
     PLAYER_EVENT_ON_CHAT                    =     18,       // (event, player, msg, Type, lang) - Can return false, newMessage
     PLAYER_EVENT_ON_WHISPER                 =     19,       // (event, player, msg, Type, lang, receiver) - Can return false, newMessage
     PLAYER_EVENT_ON_GROUP_CHAT              =     20,       // (event, player, msg, Type, lang, group) - Can return false, newMessage
     PLAYER_EVENT_ON_GUILD_CHAT              =     21,       // (event, player, msg, Type, lang, guild) - Can return false, newMessage
-    PLAYER_EVENT_ON_CHANNEL_CHAT            =     22,       // (event, player, msg, Type, lang, channel) - channel is negative for custom channels. Can return false, newMessage
+    PLAYER_EVENT_ON_CHANNEL_CHAT            =     22,       // (event, player, msg, Type, lang, channel) - Can return false, newMessage
     PLAYER_EVENT_ON_EMOTE                   =     23,       // (event, player, emote) - Not triggered on any known emote
     PLAYER_EVENT_ON_TEXT_EMOTE              =     24,       // (event, player, textEmote, emoteNum, guid)
     PLAYER_EVENT_ON_SAVE                    =     25,       // (event, player)
@@ -113,24 +112,21 @@ enum PlayerEvents
     PLAYER_EVENT_ON_LOOT_MONEY              =     37,       // (event, player, amount)
     PLAYER_EVENT_ON_QUEST_ABANDON           =     38,       // (event, player, questId)
     PLAYER_EVENT_ON_LEARN_TALENTS           =     39,       // (event, player, talentId, talentRank, spellid)
-    // UNUSED                               =     40,       // (event, player)
-    // UNUSED                               =     41,       // (event, player)
-    PLAYER_EVENT_ON_COMMAND                 =     42,       // (event, player, command, chatHandler) - player is nil if command used from console. Can return false
-    PLAYER_EVENT_ON_PET_ADDED_TO_WORLD      =     43,       // (event, player, pet)
+    PLAYER_EVENT_ON_ENVIRONMENTAL_DEATH     =     40,       // (event, player, environmentalDamageType)
+    PLAYER_EVENT_ON_TRADE_ACCEPT            =     41,       // (event, player, target) - Can return false to interrupt trade
+    PLAYER_EVENT_ON_COMMAND                 =     42,       // (event, player, command) - player is nil if command used from console. Can return false
+    PLAYER_EVENT_ON_SKILL_CHANGE            =     43,       // (event, player, skillId, skillValue) - Returns new skill level value
     PLAYER_EVENT_ON_LEARN_SPELL             =     44,       // (event, player, spellId)
-    PLAYER_EVENT_ON_ACHIEVEMENT_COMPLETE    =     45,       // (event, player, achievement)
-    PLAYER_EVENT_ON_FFAPVP_CHANGE           =     46,       // (event, player, hasFfaPvp)
+    PLAYER_EVENT_ON_ACHIEVEMENT_COMPLETE    =     45,       // (event, player, achievementId)
+    PLAYER_EVENT_ON_DISCOVER_AREA           =     46,       // (event, player, area)
     PLAYER_EVENT_ON_UPDATE_AREA             =     47,       // (event, player, oldArea, newArea)
-    PLAYER_EVENT_ON_CAN_INIT_TRADE          =     48,       // (event, player, target) - Can return false to prevent the trade
-    PLAYER_EVENT_ON_CAN_SEND_MAIL           =     49,       // (event, player, receiverGuid, mailbox, subject, body, money, cod, item) - Can return false to prevent sending the mail
-    PLAYER_EVENT_ON_CAN_JOIN_LFG            =     50,       // (event, player, roles, dungeons, comment) - Can return false to prevent queueing
-    PLAYER_EVENT_ON_QUEST_REWARD_ITEM       =     51,       //  (event, player, item, count)
-    PLAYER_EVENT_ON_CREATE_ITEM             =     52,       //  (event, player, item, count)
-    PLAYER_EVENT_ON_STORE_NEW_ITEM          =     53,       //  (event, player, item, count)
-    PLAYER_EVENT_ON_COMPLETE_QUEST          =     54,       // (event, player, quest)
-    PLAYER_EVENT_ON_CAN_GROUP_INVITE        =     55,       // (event, player, memberName) - Can return false to prevent inviting
-    PLAYER_EVENT_ON_GROUP_ROLL_REWARD_ITEM  =     56,       // (event, player, item, count, voteType, roll)
-    PLAYER_EVENT_ON_BG_DESERTION            =     57,       // (event, player, type)
+    PLAYER_EVENT_ON_TRADE_INIT              =     48,       // (event, player, target) - Can return false to interrupt trade
+    PLAYER_EVENT_ON_SEND_MAIL               =     49,       // (event, player, recipientGuid) - Can return false to interrupt sending
+    // UNUSED                               =     50,       // (event, player)
+    // UNUSED                               =     51,       // (event, player)
+    // UNUSED                               =     52,       // (event, player)
+    // UNUSED                               =     53,       // (event, player)
+    PLAYER_EVENT_ON_QUEST_STATUS_CHANGED    =     54,       // (event, player, questId, status)
 };
 </pre>
 
@@ -217,6 +213,6 @@ enum PlayerEvents
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

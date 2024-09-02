@@ -23,9 +23,7 @@ document.write(`
   <a id="Global:ClearPlayerEvents" class="fn" href="../Global/ClearPlayerEvents.html">ClearPlayerEvents</a>
   <a id="Global:ClearPlayerGossipEvents" class="fn" href="../Global/ClearPlayerGossipEvents.html">ClearPlayerGossipEvents</a>
   <a id="Global:ClearServerEvents" class="fn" href="../Global/ClearServerEvents.html">ClearServerEvents</a>
-  <a id="Global:ClearTicketEvents" class="fn" href="../Global/ClearTicketEvents.html">ClearTicketEvents</a>
   <a id="Global:ClearUniqueCreatureEvents" class="fn" href="../Global/ClearUniqueCreatureEvents.html">ClearUniqueCreatureEvents</a>
-  <a id="Global:ClearUnitEvents" class="fn" href="../Global/ClearUnitEvents.html">ClearUnitEvents</a>
   <a id="Global:CreateLongLong" class="fn" href="../Global/CreateLongLong.html">CreateLongLong</a>
   <a id="Global:CreateLuaEvent" class="fn" href="../Global/CreateLuaEvent.html">CreateLuaEvent</a>
   <a id="Global:CreatePacket" class="fn" href="../Global/CreatePacket.html">CreatePacket</a>
@@ -36,36 +34,30 @@ document.write(`
   <a id="Global:GetCoreName" class="fn" href="../Global/GetCoreName.html">GetCoreName</a>
   <a id="Global:GetCoreVersion" class="fn" href="../Global/GetCoreVersion.html">GetCoreVersion</a>
   <a id="Global:GetCurrTime" class="fn" href="../Global/GetCurrTime.html">GetCurrTime</a>
-  <a id="Global:GetDungeonEntrancePosition" class="fn" href="../Global/GetDungeonEntrancePosition.html">GetDungeonEntrancePosition</a>
   <a id="Global:GetGUIDEntry" class="fn" href="../Global/GetGUIDEntry.html">GetGUIDEntry</a>
   <a id="Global:GetGUIDLow" class="fn" href="../Global/GetGUIDLow.html">GetGUIDLow</a>
   <a id="Global:GetGUIDType" class="fn" href="../Global/GetGUIDType.html">GetGUIDType</a>
   <a id="Global:GetGameTime" class="fn" href="../Global/GetGameTime.html">GetGameTime</a>
-  <a id="Global:GetGossipMenuOptionLocale" class="fn" href="../Global/GetGossipMenuOptionLocale.html">GetGossipMenuOptionLocale</a>
   <a id="Global:GetGuildByLeaderGUID" class="fn" href="../Global/GetGuildByLeaderGUID.html">GetGuildByLeaderGUID</a>
   <a id="Global:GetGuildByName" class="fn" href="../Global/GetGuildByName.html">GetGuildByName</a>
-  <a id="Global:GetItemDisplayId" class="fn" href="../Global/GetItemDisplayId.html">GetItemDisplayId</a>
   <a id="Global:GetItemGUID" class="fn" href="../Global/GetItemGUID.html">GetItemGUID</a>
   <a id="Global:GetItemLink" class="fn" href="../Global/GetItemLink.html">GetItemLink</a>
-  <a id="Global:GetItemTemplate" class="fn" href="../Global/GetItemTemplate.html">GetItemTemplate</a>
   <a id="Global:GetLuaEngine" class="fn" href="../Global/GetLuaEngine.html">GetLuaEngine</a>
   <a id="Global:GetMapById" class="fn" href="../Global/GetMapById.html">GetMapById</a>
   <a id="Global:GetObjectGUID" class="fn" href="../Global/GetObjectGUID.html">GetObjectGUID</a>
-  <a id="Global:GetOwnerHalaa" class="fn" href="../Global/GetOwnerHalaa.html">GetOwnerHalaa</a>
   <a id="Global:GetPlayerByGUID" class="fn" href="../Global/GetPlayerByGUID.html">GetPlayerByGUID</a>
   <a id="Global:GetPlayerByName" class="fn" href="../Global/GetPlayerByName.html">GetPlayerByName</a>
   <a id="Global:GetPlayerCount" class="fn" href="../Global/GetPlayerCount.html">GetPlayerCount</a>
   <a id="Global:GetPlayerGUID" class="fn" href="../Global/GetPlayerGUID.html">GetPlayerGUID</a>
   <a id="Global:GetPlayersInWorld" class="fn" href="../Global/GetPlayersInWorld.html">GetPlayersInWorld</a>
+  <a id="Global:GetPlayersOnMap" class="fn" href="../Global/GetPlayersOnMap.html">GetPlayersOnMap</a>
   <a id="Global:GetQuest" class="fn" href="../Global/GetQuest.html">GetQuest</a>
   <a id="Global:GetRealmID" class="fn" href="../Global/GetRealmID.html">GetRealmID</a>
-  <a id="Global:GetSpellInfo" class="fn" href="../Global/GetSpellInfo.html">GetSpellInfo</a>
   <a id="Global:GetStateInstanceId" class="fn" href="../Global/GetStateInstanceId.html">GetStateInstanceId</a>
   <a id="Global:GetStateMap" class="fn" href="../Global/GetStateMap.html">GetStateMap</a>
   <a id="Global:GetStateMapId" class="fn" href="../Global/GetStateMapId.html">GetStateMapId</a>
   <a id="Global:GetTimeDiff" class="fn" href="../Global/GetTimeDiff.html">GetTimeDiff</a>
   <a id="Global:GetUnitGUID" class="fn" href="../Global/GetUnitGUID.html">GetUnitGUID</a>
-  <a id="Global:HttpRequest" class="fn" href="../Global/HttpRequest.html">HttpRequest</a>
   <a id="Global:IsBagPos" class="fn" href="../Global/IsBagPos.html">IsBagPos</a>
   <a id="Global:IsBankPos" class="fn" href="../Global/IsBankPos.html">IsBankPos</a>
   <a id="Global:IsCompatibilityMode" class="fn" href="../Global/IsCompatibilityMode.html">IsCompatibilityMode</a>
@@ -92,17 +84,15 @@ document.write(`
   <a id="Global:RegisterPlayerEvent" class="fn" href="../Global/RegisterPlayerEvent.html">RegisterPlayerEvent</a>
   <a id="Global:RegisterPlayerGossipEvent" class="fn" href="../Global/RegisterPlayerGossipEvent.html">RegisterPlayerGossipEvent</a>
   <a id="Global:RegisterServerEvent" class="fn" href="../Global/RegisterServerEvent.html">RegisterServerEvent</a>
-  <a id="Global:RegisterTicketEvent" class="fn" href="../Global/RegisterTicketEvent.html">RegisterTicketEvent</a>
+  <a id="Global:RegisterSpellEvent" class="fn" href="../Global/RegisterSpellEvent.html">RegisterSpellEvent</a>
   <a id="Global:RegisterUniqueCreatureEvent" class="fn" href="../Global/RegisterUniqueCreatureEvent.html">RegisterUniqueCreatureEvent</a>
-  <a id="Global:RegisterUnitEvent" class="fn" href="../Global/RegisterUnitEvent.html">RegisterUnitEvent</a>
-  <a id="Global:ReloadForge" class="fn" href="../Global/ReloadForge.html">ReloadForge</a>
+  <a id="Global:ReloadEluna" class="fn" href="../Global/ReloadEluna.html">ReloadEluna</a>
   <a id="Global:RemoveEventById" class="fn" href="../Global/RemoveEventById.html">RemoveEventById</a>
   <a id="Global:RemoveEvents" class="fn" href="../Global/RemoveEvents.html">RemoveEvents</a>
   <a id="Global:RunCommand" class="fn" href="../Global/RunCommand.html">RunCommand</a>
   <a id="Global:SaveAllPlayers" class="fn" href="../Global/SaveAllPlayers.html">SaveAllPlayers</a>
   <a id="Global:SendMail" class="fn" href="../Global/SendMail.html">SendMail</a>
   <a id="Global:SendWorldMessage" class="fn" href="../Global/SendWorldMessage.html">SendWorldMessage</a>
-  <a id="Global:SetOwnerHalaa" class="fn" href="../Global/SetOwnerHalaa.html">SetOwnerHalaa</a>
   <a id="Global:StartGameEvent" class="fn" href="../Global/StartGameEvent.html">StartGameEvent</a>
   <a id="Global:StopGameEvent" class="fn" href="../Global/StopGameEvent.html">StopGameEvent</a>
   <a id="Global:VendorRemoveAllItems" class="fn" href="../Global/VendorRemoveAllItems.html">VendorRemoveAllItems</a>
