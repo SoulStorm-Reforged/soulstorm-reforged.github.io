@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the SpellInfo:IsAffectingArea method in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the SpellInfo:IsAffectingArea method in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>SpellInfo:IsAffectingArea - Forge</title>
+    <title>SpellInfo:IsAffectingArea - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
     <h2>SpellInfo Methods</h2>
@@ -73,12 +72,13 @@
 A target can be an individual unit, player, or an area, and the spellInfo stores these details.</p>
 <p>The function checks the spell's attributes to determine if the spell is designed to affect an area or not.
 The outcome relies on spell's attributes field.</p>
+<p>@return boolean : returns true if <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> affects an area, else false</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>is_affecting_area = SpellInfo:IsAffectingArea()</code>
+            <code>SpellInfo:IsAffectingArea()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -92,10 +92,7 @@ The outcome relies on spell's attributes field.</p>
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="https://github.com/ForgeLuaEngine/ForgeTrinityWotlk/search?l=cpp&q=%22enum+bool%22&type=Code&utf8=%E2%9C%93">bool</a></strong> is_affecting_area</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
-            </dl>
+            Nothing.
         </p>
     </div>
 
@@ -143,6 +140,6 @@ The outcome relies on spell's attributes field.</p>
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

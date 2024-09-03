@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the SpellInfo:IsProfession method in the Eluna engine.">
+    <meta name="description" content="API documentation for the SpellInfo:IsStackableOnOneSlotWithDifferentCasters method in the Eluna engine.">
     <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>SpellInfo:IsProfession - Eluna</title>
+    <title>SpellInfo:IsStackableOnOneSlotWithDifferentCasters - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
 
@@ -29,7 +29,7 @@
     <script src="sidebar.js"></script>
     <script>
       // Highlight current method by adding "current" class to it
-      var element = document.getElementById("SpellInfo:IsProfession");
+      var element = document.getElementById("SpellInfo:IsStackableOnOneSlotWithDifferentCasters");
       if (element) {
         var classname = "current";
         arr = element.className.split(" ");
@@ -56,7 +56,7 @@
 <section id='main' class="content mod">
     <h1 class='fqn'>
         Method
-    <a class="mod" href="../SpellInfo/index.html">SpellInfo</a>:<a class="fn" href="../SpellInfo/IsProfession.html">IsProfession</a>
+    <a class="mod" href="../SpellInfo/index.html">SpellInfo</a>:<a class="fn" href="../SpellInfo/IsStackableOnOneSlotWithDifferentCasters.html">IsStackableOnOneSlotWithDifferentCasters</a>
         <span class='out-of-band'>
             <span id='render-detail'>
                 <a id="collapse-all" href="#">[-]</a>
@@ -67,16 +67,15 @@
 
     
     <div class='docblock'>
-        <p>Checks if the <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> is related to a profession skill.</p>
-<p>Profession skills may refer to abilities related to a specific occupation or trade, 
-such as blacksmithing, alchemy, fishing, etc.</p>
-<p>@return boolean : Returns true if the <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> is related to a profession, else false.</p>
+        <p>Checks if the <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> represents a spell or ability that can be stacked on one slot by different casters.</p>
+<p>This function checks if the spell or ability represented by <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> has this stackable property.</p>
+<p>@return boolean : Returns true if the <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> is stackable on one slot by different casters, else false.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>SpellInfo:IsProfession()</code>
+            <code>SpellInfo:IsStackableOnOneSlotWithDifferentCasters()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>

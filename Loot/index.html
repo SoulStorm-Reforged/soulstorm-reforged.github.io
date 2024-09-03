@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Loot class in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Loot class in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Loot - Forge API</title>
+    <title>Loot - Eluna API</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
 
@@ -59,155 +58,119 @@
     <table>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='AddItem.html'>AddItem</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Add an item to the <a class="mod" href="../Loot/index.html">Loot</a> object</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='AddLooter.html'>AddLooter</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='Clear.html'>Clear</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Clear the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GenerateMoney.html'>GenerateMoney</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Generate random copper amount to the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetItems.html'>GetItems</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns a table with all data from the items in the <a class="mod" href="../Loot/index.html">Loot</a></p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetMoney.html'>GetMoney</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the copper amount on the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='GetUnlootedCount.html'>GetUnlootedCount</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns the amount of unlooted count item of the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='HasItem.html'>HasItem</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Loot/index.html">Loot</a> have item, <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='HasItemFor.html'>HasItemFor</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='HasItemForAll.html'>HasItemForAll</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='IsLooted.html'>IsLooted</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Returns <code>true</code> if the <a class="mod" href="../Loot/index.html">Loot</a> is already looted, <code>false</code> otherwise.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='RemoveItem.html'>RemoveItem</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Remove Item from the <a class="mod" href="../Loot/index.html">Loot</a>. If there is no count there is delete all the specified itemid.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
-                <a class='fn' href='RemoveLooter.html'>RemoveLooter</a>
-            </td>
-            <td class='docblock short'>
-                <p></p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetItemLooted.html'>SetItemLooted</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Set the specified item with specified count is already looter for the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetMoney.html'>SetMoney</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Set the specified copper amount to the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='SetUnlootedCount.html'>SetUnlootedCount</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Set the unlooted count in <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
         <tr>
             <td>
-                <a class='stability Experimental' title='Undocumented'></a>
+                <a class='stability Stable' title='Documented'></a>
                 <a class='fn' href='UpdateItemIndex.html'>UpdateItemIndex</a>
             </td>
             <td class='docblock short'>
-                <p></p>
+                <p>Update the item_index for the <a class="mod" href="../Loot/index.html">Loot</a>.</p>
             </td>
         </tr>
     </table>
@@ -256,6 +219,6 @@
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

@@ -98,6 +98,7 @@ document.write(`
   <a id="Player:GetSkillValue" class="fn" href="../Player/GetSkillValue.html">GetSkillValue</a>
   <a id="Player:GetSpecsCount" class="fn" href="../Player/GetSpecsCount.html">GetSpecsCount</a>
   <a id="Player:GetSpellCooldownDelay" class="fn" href="../Player/GetSpellCooldownDelay.html">GetSpellCooldownDelay</a>
+  <a id="Player:GetSpells" class="fn" href="../Player/GetSpells.html">GetSpells</a>
   <a id="Player:GetSubGroup" class="fn" href="../Player/GetSubGroup.html">GetSubGroup</a>
   <a id="Player:GetTeam" class="fn" href="../Player/GetTeam.html">GetTeam</a>
   <a id="Player:GetTotalPlayedTime" class="fn" href="../Player/GetTotalPlayedTime.html">GetTotalPlayedTime</a>

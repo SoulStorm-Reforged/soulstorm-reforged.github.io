@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the Global:RegisterUnitEvent method in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the Global:RegisterUnitEvent method in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>Global:RegisterUnitEvent - Forge</title>
+    <title>Global:RegisterUnitEvent - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
     <h2>Global Methods</h2>
@@ -72,10 +71,8 @@
 <pre>
 enum UnitEvents
 {
-    UNIT_EVENT_ON_SHAPESHIFT_FORM                   = 1,    // (event, unit, form)
-    UNIT_EVENT_ON_AURA_APPLY                        = 2,    // (event, unit, aura)
-    UNIT_EVENT_ON_AURA_REMOVE                       = 3,    // (event, unit, aura, removeMode)
-    UNIT_EVENT_COUNT
+    UNIT_EVENT_ON_SHAPESHIFT_CHANGE        =     1,        // (event, player)
+    UNIT_EVENT_ON_AURA_ADD                 =     2,        // (event, unit, target, spell_id, spell_info)
 };
 </pre>
 
@@ -83,10 +80,10 @@ enum UnitEvents
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>RegisterUnitEvent( event, function )</code>
+            <code>cancel = RegisterUnitEvent( event, function )</code>
         </p>
         <p>
-            <code>RegisterUnitEvent( event, function, shots )</code>
+            <code>cancel = RegisterUnitEvent( event, function, shots )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -95,7 +92,7 @@ enum UnitEvents
         <p>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.3.html">number</a></strong> event</code></dt>
-                <dd class="docblock"><p>Event ID, refer to UnitEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
+                <dd class="docblock"><p><a class="mod" href="../Unit/index.html">Unit</a> event Id, refer to UnitEvents above. </p><p><em>Valid numbers</em>: integers from 0 to 4,294,967,295.</p></dd>
             </dl>
             <dl>
                 <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> function</code></dt>
@@ -111,7 +108,10 @@ enum UnitEvents
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            Nothing.
+            <dl>
+                <dt><code><strong><a href="http://www.lua.org/pil/2.6.html">function</a></strong> cancel</code></dt>
+                <dd class="docblock"><p>A function that cancels the binding when called. </p></dd>
+            </dl>
         </p>
     </div>
 
@@ -159,6 +159,6 @@ enum UnitEvents
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>

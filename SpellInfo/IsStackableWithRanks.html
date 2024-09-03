@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API documentation for the SpellInfo:IsStackableWithRanks method in the Forge engine.">
-    <meta name="keywords" content="forge, lua, lua engine, azerothcore, script, scripting, doc, docs, documentation">
+    <meta name="description" content="API documentation for the SpellInfo:IsStackableWithRanks method in the Eluna engine.">
+    <meta name="keywords" content="eluna, lua, lua engine, trinitycore, trinity, mangos, cmangos, script, scripting, doc, docs, documentation">
 
-    <title>SpellInfo:IsStackableWithRanks - Forge</title>
+    <title>SpellInfo:IsStackableWithRanks - Eluna</title>
 
     <link rel="stylesheet" type="text/css" href="../static/main.css">
-    <link rel="stylesheet" type="text/css" href="../static/dark.css">
 
     <link rel="shortcut icon" href="../static/favicon.ico">
 
@@ -23,7 +22,7 @@
     <![endif]-->
 
 <section class="sidebar">
-    <a href='../index.html'><img src='../static/forge-logo.png' alt='Forge Logo' width='100'></a>
+    <a href='../index.html'><img src='../static/eluna-logo.png' alt='Eluna Logo' width='100'></a>
     <div class="block">
         
     <h2>SpellInfo Methods</h2>
@@ -72,12 +71,14 @@
 <p>Some spells or abilities can accumulate or "stack" their effects with multiple activations 
 and these effects can sometimes vary based on the rank or level of the spell. This function checks 
 if the spell represented by <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> has this capacity.</p>
+<p>@return boolean : Returns true if the <a class="mod" href="../SpellInfo/index.html">SpellInfo</a> is stackable with different ranks, 
+otherwise false.</p>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>is_stackable_with_ranks = SpellInfo:IsStackableWithRanks()</code>
+            <code>SpellInfo:IsStackableWithRanks()</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
@@ -91,10 +92,7 @@ if the spell represented by <a class="mod" href="../SpellInfo/index.html">SpellI
             <a href="#returns">Returns</a>
         </h2>
         <p>
-            <dl>
-                <dt><code><strong><a href="https://github.com/ForgeLuaEngine/ForgeTrinityWotlk/search?l=cpp&q=%22enum+bool%22&type=Code&utf8=%E2%9C%93">bool</a></strong> is_stackable_with_ranks</code></dt>
-                <dd class="docblock"><em>See method description.</em></dd>
-            </dl>
+            Nothing.
         </p>
     </div>
 
@@ -142,6 +140,6 @@ if the spell represented by <a class="mod" href="../SpellInfo/index.html">SpellI
 <script src="../static/main.js"></script>
 <script async src="../search-index.js"></script>
 <center>Generated on <script src="../date.js"></script></center>
-<center>&copy;2016 - Forge Lua Engine</center>
+<center>&copy; 2010 - 2024 Eluna Lua Engine</center>
 </body>
 </html>
