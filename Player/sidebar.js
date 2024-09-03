@@ -52,6 +52,7 @@ document.write(`
   <a id="Player:GetEquippedItemBySlot" class="fn" href="../Player/GetEquippedItemBySlot.html">GetEquippedItemBySlot</a>
   <a id="Player:GetFreeTalentPoints" class="fn" href="../Player/GetFreeTalentPoints.html">GetFreeTalentPoints</a>
   <a id="Player:GetGMRank" class="fn" href="../Player/GetGMRank.html">GetGMRank</a>
+  <a id="Player:GetGlyphs" class="fn" href="../Player/GetGlyphs.html">GetGlyphs</a>
   <a id="Player:GetGossipTextId" class="fn" href="../Player/GetGossipTextId.html">GetGossipTextId</a>
   <a id="Player:GetGroup" class="fn" href="../Player/GetGroup.html">GetGroup</a>
   <a id="Player:GetGroupInvite" class="fn" href="../Player/GetGroupInvite.html">GetGroupInvite</a>
@@ -110,6 +111,7 @@ document.write(`
   <a id="Player:GossipClearMenu" class="fn" href="../Player/GossipClearMenu.html">GossipClearMenu</a>
   <a id="Player:GossipComplete" class="fn" href="../Player/GossipComplete.html">GossipComplete</a>
   <a id="Player:GossipMenuAddItem" class="fn" href="../Player/GossipMenuAddItem.html">GossipMenuAddItem</a>
+  <a id="Player:GossipMenuSetText" class="fn" href="../Player/GossipMenuSetText.html">GossipMenuSetText</a>
   <a id="Player:GossipSendMenu" class="fn" href="../Player/GossipSendMenu.html">GossipSendMenu</a>
   <a id="Player:GossipSendPOI" class="fn" href="../Player/GossipSendPOI.html">GossipSendPOI</a>
   <a id="Player:GroupCreate" class="fn" href="../Player/GroupCreate.html">GroupCreate</a>
@@ -117,6 +119,7 @@ document.write(`
   <a id="Player:GroupInvite" class="fn" href="../Player/GroupInvite.html">GroupInvite</a>
   <a id="Player:HasAchieved" class="fn" href="../Player/HasAchieved.html">HasAchieved</a>
   <a id="Player:HasAtLoginFlag" class="fn" href="../Player/HasAtLoginFlag.html">HasAtLoginFlag</a>
+  <a id="Player:HasGlyph" class="fn" href="../Player/HasGlyph.html">HasGlyph</a>
   <a id="Player:HasItem" class="fn" href="../Player/HasItem.html">HasItem</a>
   <a id="Player:HasPendingBind" class="fn" href="../Player/HasPendingBind.html">HasPendingBind</a>
   <a id="Player:HasQuest" class="fn" href="../Player/HasQuest.html">HasQuest</a>
@@ -211,6 +214,7 @@ document.write(`
   <a id="Player:SendShowMailBox" class="fn" href="../Player/SendShowMailBox.html">SendShowMailBox</a>
   <a id="Player:SendSpiritResurrect" class="fn" href="../Player/SendSpiritResurrect.html">SendSpiritResurrect</a>
   <a id="Player:SendTabardVendorActivate" class="fn" href="../Player/SendTabardVendorActivate.html">SendTabardVendorActivate</a>
+  <a id="Player:SendTalentReset" class="fn" href="../Player/SendTalentReset.html">SendTalentReset</a>
   <a id="Player:SendTaxiMenu" class="fn" href="../Player/SendTaxiMenu.html">SendTaxiMenu</a>
   <a id="Player:SendTrainerList" class="fn" href="../Player/SendTrainerList.html">SendTrainerList</a>
   <a id="Player:SendUpdateWorldState" class="fn" href="../Player/SendUpdateWorldState.html">SendUpdateWorldState</a>
