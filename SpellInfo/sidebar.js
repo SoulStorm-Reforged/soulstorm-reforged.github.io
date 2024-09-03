@@ -7,7 +7,9 @@ document.write(`
   <a id="SpellInfo:CheckShapeshift" class="fn" href="../SpellInfo/CheckShapeshift.html">CheckShapeshift</a>
   <a id="SpellInfo:CheckTarget" class="fn" href="../SpellInfo/CheckTarget.html">CheckTarget</a>
   <a id="SpellInfo:CheckTargetCreatureType" class="fn" href="../SpellInfo/CheckTargetCreatureType.html">CheckTargetCreatureType</a>
+  <a id="SpellInfo:CheckVehicle" class="fn" href="../SpellInfo/CheckVehicle.html">CheckVehicle</a>
   <a id="SpellInfo:GetAllEffectsMechanicMask" class="fn" href="../SpellInfo/GetAllEffectsMechanicMask.html">GetAllEffectsMechanicMask</a>
+  <a id="SpellInfo:GetAttackType" class="fn" href="../SpellInfo/GetAttackType.html">GetAttackType</a>
   <a id="SpellInfo:GetAttributes" class="fn" href="../SpellInfo/GetAttributes.html">GetAttributes</a>
   <a id="SpellInfo:GetAuraState" class="fn" href="../SpellInfo/GetAuraState.html">GetAuraState</a>
   <a id="SpellInfo:GetCategory" class="fn" href="../SpellInfo/GetCategory.html">GetCategory</a>
@@ -23,8 +25,11 @@ document.write(`
   <a id="SpellInfo:HasAttribute" class="fn" href="../SpellInfo/HasAttribute.html">HasAttribute</a>
   <a id="SpellInfo:HasAura" class="fn" href="../SpellInfo/HasAura.html">HasAura</a>
   <a id="SpellInfo:HasEffect" class="fn" href="../SpellInfo/HasEffect.html">HasEffect</a>
+  <a id="SpellInfo:HasInitialAggro" class="fn" href="../SpellInfo/HasInitialAggro.html">HasInitialAggro</a>
+  <a id="SpellInfo:HasOnlyDamageEffects" class="fn" href="../SpellInfo/HasOnlyDamageEffects.html">HasOnlyDamageEffects</a>
   <a id="SpellInfo:IsAbilityLearnedWithProfession" class="fn" href="../SpellInfo/IsAbilityLearnedWithProfession.html">IsAbilityLearnedWithProfession</a>
   <a id="SpellInfo:IsAbilityOfSkillType" class="fn" href="../SpellInfo/IsAbilityOfSkillType.html">IsAbilityOfSkillType</a>
+  <a id="SpellInfo:IsAffected" class="fn" href="../SpellInfo/IsAffected.html">IsAffected</a>
   <a id="SpellInfo:IsAffectedBySpellMods" class="fn" href="../SpellInfo/IsAffectedBySpellMods.html">IsAffectedBySpellMods</a>
   <a id="SpellInfo:IsAffectingArea" class="fn" href="../SpellInfo/IsAffectingArea.html">IsAffectingArea</a>
   <a id="SpellInfo:IsAllowingDeadTarget" class="fn" href="../SpellInfo/IsAllowingDeadTarget.html">IsAllowingDeadTarget</a>
@@ -37,8 +42,12 @@ document.write(`
   <a id="SpellInfo:IsCooldownStartedOnEvent" class="fn" href="../SpellInfo/IsCooldownStartedOnEvent.html">IsCooldownStartedOnEvent</a>
   <a id="SpellInfo:IsDeathPersistent" class="fn" href="../SpellInfo/IsDeathPersistent.html">IsDeathPersistent</a>
   <a id="SpellInfo:IsExplicitDiscovery" class="fn" href="../SpellInfo/IsExplicitDiscovery.html">IsExplicitDiscovery</a>
+  <a id="SpellInfo:IsGroupBuff" class="fn" href="../SpellInfo/IsGroupBuff.html">IsGroupBuff</a>
+  <a id="SpellInfo:IsItemFitToSpellRequirements" class="fn" href="../SpellInfo/IsItemFitToSpellRequirements.html">IsItemFitToSpellRequirements</a>
   <a id="SpellInfo:IsLootCrafting" class="fn" href="../SpellInfo/IsLootCrafting.html">IsLootCrafting</a>
+  <a id="SpellInfo:IsMoveAllowedChannel" class="fn" href="../SpellInfo/IsMoveAllowedChannel.html">IsMoveAllowedChannel</a>
   <a id="SpellInfo:IsMultiSlotAura" class="fn" href="../SpellInfo/IsMultiSlotAura.html">IsMultiSlotAura</a>
+  <a id="SpellInfo:IsNextMeleeSwingSpell" class="fn" href="../SpellInfo/IsNextMeleeSwingSpell.html">IsNextMeleeSwingSpell</a>
   <a id="SpellInfo:IsPassive" class="fn" href="../SpellInfo/IsPassive.html">IsPassive</a>
   <a id="SpellInfo:IsPassiveStackableWithRanks" class="fn" href="../SpellInfo/IsPassiveStackableWithRanks.html">IsPassiveStackableWithRanks</a>
   <a id="SpellInfo:IsPositive" class="fn" href="../SpellInfo/IsPositive.html">IsPositive</a>
@@ -51,6 +60,7 @@ document.write(`
   <a id="SpellInfo:IsRequiringDeadTarget" class="fn" href="../SpellInfo/IsRequiringDeadTarget.html">IsRequiringDeadTarget</a>
   <a id="SpellInfo:IsSelfCast" class="fn" href="../SpellInfo/IsSelfCast.html">IsSelfCast</a>
   <a id="SpellInfo:IsSingleTarget" class="fn" href="../SpellInfo/IsSingleTarget.html">IsSingleTarget</a>
+  <a id="SpellInfo:IsStackableOnOneSlotWithDifferentCasters" class="fn" href="../SpellInfo/IsStackableOnOneSlotWithDifferentCasters.html">IsStackableOnOneSlotWithDifferentCasters</a>
   <a id="SpellInfo:IsStackableWithRanks" class="fn" href="../SpellInfo/IsStackableWithRanks.html">IsStackableWithRanks</a>
   <a id="SpellInfo:IsTargetingArea" class="fn" href="../SpellInfo/IsTargetingArea.html">IsTargetingArea</a>
   <a id="SpellInfo:NeedsComboPoints" class="fn" href="../SpellInfo/NeedsComboPoints.html">NeedsComboPoints</a>

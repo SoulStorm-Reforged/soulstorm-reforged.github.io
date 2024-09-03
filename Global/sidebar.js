@@ -24,6 +24,7 @@ document.write(`
   <a id="Global:ClearPlayerGossipEvents" class="fn" href="../Global/ClearPlayerGossipEvents.html">ClearPlayerGossipEvents</a>
   <a id="Global:ClearServerEvents" class="fn" href="../Global/ClearServerEvents.html">ClearServerEvents</a>
   <a id="Global:ClearUniqueCreatureEvents" class="fn" href="../Global/ClearUniqueCreatureEvents.html">ClearUniqueCreatureEvents</a>
+  <a id="Global:ClearUnitEvents" class="fn" href="../Global/ClearUnitEvents.html">ClearUnitEvents</a>
   <a id="Global:CreateLongLong" class="fn" href="../Global/CreateLongLong.html">CreateLongLong</a>
   <a id="Global:CreateLuaEvent" class="fn" href="../Global/CreateLuaEvent.html">CreateLuaEvent</a>
   <a id="Global:CreatePacket" class="fn" href="../Global/CreatePacket.html">CreatePacket</a>
@@ -53,6 +54,7 @@ document.write(`
   <a id="Global:GetPlayersOnMap" class="fn" href="../Global/GetPlayersOnMap.html">GetPlayersOnMap</a>
   <a id="Global:GetQuest" class="fn" href="../Global/GetQuest.html">GetQuest</a>
   <a id="Global:GetRealmID" class="fn" href="../Global/GetRealmID.html">GetRealmID</a>
+  <a id="Global:GetSpellInfo" class="fn" href="../Global/GetSpellInfo.html">GetSpellInfo</a>
   <a id="Global:GetStateInstanceId" class="fn" href="../Global/GetStateInstanceId.html">GetStateInstanceId</a>
   <a id="Global:GetStateMap" class="fn" href="../Global/GetStateMap.html">GetStateMap</a>
   <a id="Global:GetStateMapId" class="fn" href="../Global/GetStateMapId.html">GetStateMapId</a>
@@ -86,6 +88,7 @@ document.write(`
   <a id="Global:RegisterServerEvent" class="fn" href="../Global/RegisterServerEvent.html">RegisterServerEvent</a>
   <a id="Global:RegisterSpellEvent" class="fn" href="../Global/RegisterSpellEvent.html">RegisterSpellEvent</a>
   <a id="Global:RegisterUniqueCreatureEvent" class="fn" href="../Global/RegisterUniqueCreatureEvent.html">RegisterUniqueCreatureEvent</a>
+  <a id="Global:RegisterUnitEvent" class="fn" href="../Global/RegisterUnitEvent.html">RegisterUnitEvent</a>
   <a id="Global:ReloadEluna" class="fn" href="../Global/ReloadEluna.html">ReloadEluna</a>
   <a id="Global:RemoveEventById" class="fn" href="../Global/RemoveEventById.html">RemoveEventById</a>
   <a id="Global:RemoveEvents" class="fn" href="../Global/RemoveEvents.html">RemoveEvents</a>

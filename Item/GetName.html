@@ -68,19 +68,36 @@
     
     <div class='docblock'>
         <p>Returns the name of the <a class="mod" href="../Item/index.html">Item</a></p>
+<pre>
+enum LocaleConstant
+{
+    LOCALE_enUS = 0,
+    LOCALE_koKR = 1,
+    LOCALE_frFR = 2,
+    LOCALE_deDE = 3,
+    LOCALE_zhCN = 4,
+    LOCALE_zhTW = 5,
+    LOCALE_esES = 6,
+    LOCALE_esMX = 7,
+    LOCALE_ruRU = 8
+};
+</pre>
 
         <h2 id="synopsis" class='section-header'>
             <a href="#synopsis">Synopsis</a>
         </h2>
         <p>
-            <code>name = Item:GetName()</code>
+            <code>name = Item:GetName( locale )</code>
         </p>
 
         <h2 id="arguments" class='section-header'>
             <a href="#arguments">Arguments</a>
         </h2>
         <p>
-            None.
+            <dl>
+                <dt><code><strong><a href="https://github.com/SoulStorm-Reforged/ForgeTrinityWotlk/search?l=cpp&q=%22enum+LocaleConstant%22&type=Code&utf8=%E2%9C%93">LocaleConstant</a></strong> locale (DEFAULT_LOCALE)</code></dt>
+                <dd class="docblock"><p>Locale to return the <a class="mod" href="../Item/index.html">Item</a>'s name. </p></dd>
+            </dl>
         </p>
 
         <h2 id="returns" class='section-header'>
