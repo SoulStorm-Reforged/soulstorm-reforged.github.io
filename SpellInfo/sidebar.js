@@ -14,7 +14,6 @@ document.write(`
   <a id="SpellInfo:GetAuraState" class="fn" href="../SpellInfo/GetAuraState.html">GetAuraState</a>
   <a id="SpellInfo:GetCategory" class="fn" href="../SpellInfo/GetCategory.html">GetCategory</a>
   <a id="SpellInfo:GetDispelMask" class="fn" href="../SpellInfo/GetDispelMask.html">GetDispelMask</a>
-  <a id="SpellInfo:GetEffectInfo" class="fn" href="../SpellInfo/GetEffectInfo.html">GetEffectInfo</a>
   <a id="SpellInfo:GetEffectMechanic" class="fn" href="../SpellInfo/GetEffectMechanic.html">GetEffectMechanic</a>
   <a id="SpellInfo:GetEffectMechanicMask" class="fn" href="../SpellInfo/GetEffectMechanicMask.html">GetEffectMechanicMask</a>
   <a id="SpellInfo:GetExplicitTargetMask" class="fn" href="../SpellInfo/GetExplicitTargetMask.html">GetExplicitTargetMask</a>
