@@ -242,6 +242,7 @@ searchIndex["Aura"] = {
         [3, "GetGuildByName", "", "Returns a <a class=\"mod\" href=\"Guild/index.html\">Guild</a> by name."],
         [3, "GetItemGUID", "", "Builds an <a class=\"mod\" href=\"Item/index.html\">Item</a>'s GUID."],
         [3, "GetItemLink", "", "Returns an chat link for an <a class=\"mod\" href=\"Item/index.html\">Item</a>."],
+        [3, "GetItemTemplateByEntry", "", ""],
         [3, "GetLuaEngine", "", "Returns Lua engine's name."],
         [3, "GetMapById", "", "Returns a <a class=\"mod\" href=\"Map/index.html\">Map</a> by ID."],
         [3, "GetObjectGUID", "", "Builds a <a class=\"mod\" href=\"GameObject/index.html\">GameObject</a>'s GUID."],
@@ -424,6 +425,17 @@ searchIndex["Aura"] = {
         [3, "SetCount", "", "Sets the stack count of the <a class=\"mod\" href=\"Item/index.html\">Item</a>"],
         [3, "SetEnchantment", "", "Sets the specified enchantment of the <a class=\"mod\" href=\"Item/index.html\">Item</a> to the specified slot"],
         [3, "SetOwner", "", "Sets the <a class=\"mod\" href=\"Player/index.html\">Player</a> specified as the owner of the <a class=\"mod\" href=\"Item/index.html\">Item</a>"],
+    ],
+    "paths": []
+};searchIndex["ItemTemplate"] = {
+    "items": [
+        [0, "", "ItemTemplate", ""],
+        [3, "GetDisplayInfo", "", ""],
+        [3, "GetIcon", "", ""],
+        [3, "GetInventoryType", "", ""],
+        [3, "GetMaxCount", "", ""],
+        [3, "GetName", "", ""],
+        [3, "GetQuality", "", ""],
     ],
     "paths": []
 };searchIndex["Loot"] = {
@@ -829,7 +841,6 @@ searchIndex["Aura"] = {
         [3, "GetAuraState", "", ""],
         [3, "GetCategory", "", "Retrieves the category of the <a class=\"mod\" href=\"SpellInfo/index.html\">SpellInfo</a>."],
         [3, "GetDispelMask", "", ""],
-        [3, "GetEffectInfo", "", ""],
         [3, "GetEffectMechanic", "", ""],
         [3, "GetEffectMechanicMask", "", ""],
         [3, "GetExplicitTargetMask", "", ""],
