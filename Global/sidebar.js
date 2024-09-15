@@ -30,6 +30,7 @@ document.write(`
   <a id="Global:CreatePacket" class="fn" href="../Global/CreatePacket.html">CreatePacket</a>
   <a id="Global:CreateULongLong" class="fn" href="../Global/CreateULongLong.html">CreateULongLong</a>
   <a id="Global:GetActiveGameEvents" class="fn" href="../Global/GetActiveGameEvents.html">GetActiveGameEvents</a>
+  <a id="Global:GetAllTalentInfo" class="fn" href="../Global/GetAllTalentInfo.html">GetAllTalentInfo</a>
   <a id="Global:GetAreaName" class="fn" href="../Global/GetAreaName.html">GetAreaName</a>
   <a id="Global:GetCoreExpansion" class="fn" href="../Global/GetCoreExpansion.html">GetCoreExpansion</a>
   <a id="Global:GetCoreName" class="fn" href="../Global/GetCoreName.html">GetCoreName</a>
@@ -39,6 +40,7 @@ document.write(`
   <a id="Global:GetGUIDLow" class="fn" href="../Global/GetGUIDLow.html">GetGUIDLow</a>
   <a id="Global:GetGUIDType" class="fn" href="../Global/GetGUIDType.html">GetGUIDType</a>
   <a id="Global:GetGameTime" class="fn" href="../Global/GetGameTime.html">GetGameTime</a>
+  <a id="Global:GetGossipMenuOptionLocale" class="fn" href="../Global/GetGossipMenuOptionLocale.html">GetGossipMenuOptionLocale</a>
   <a id="Global:GetGuildByLeaderGUID" class="fn" href="../Global/GetGuildByLeaderGUID.html">GetGuildByLeaderGUID</a>
   <a id="Global:GetGuildByName" class="fn" href="../Global/GetGuildByName.html">GetGuildByName</a>
   <a id="Global:GetItemGUID" class="fn" href="../Global/GetItemGUID.html">GetItemGUID</a>
@@ -60,6 +62,7 @@ document.write(`
   <a id="Global:GetStateMap" class="fn" href="../Global/GetStateMap.html">GetStateMap</a>
   <a id="Global:GetStateMapId" class="fn" href="../Global/GetStateMapId.html">GetStateMapId</a>
   <a id="Global:GetTimeDiff" class="fn" href="../Global/GetTimeDiff.html">GetTimeDiff</a>
+  <a id="Global:GetTrainerSpells" class="fn" href="../Global/GetTrainerSpells.html">GetTrainerSpells</a>
   <a id="Global:GetUnitGUID" class="fn" href="../Global/GetUnitGUID.html">GetUnitGUID</a>
   <a id="Global:HttpRequest" class="fn" href="../Global/HttpRequest.html">HttpRequest</a>
   <a id="Global:IsBagPos" class="fn" href="../Global/IsBagPos.html">IsBagPos</a>

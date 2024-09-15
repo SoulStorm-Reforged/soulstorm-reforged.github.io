@@ -1,6 +1,7 @@
 document.write(`
   <a id="Unit:AddAura" class="fn" href="../Unit/AddAura.html">AddAura</a>
   <a id="Unit:AddUnitState" class="fn" href="../Unit/AddUnitState.html">AddUnitState</a>
+  <a id="Unit:ApplyStatPctModifier" class="fn" href="../Unit/ApplyStatPctModifier.html">ApplyStatPctModifier</a>
   <a id="Unit:Attack" class="fn" href="../Unit/Attack.html">Attack</a>
   <a id="Unit:AttackStop" class="fn" href="../Unit/AttackStop.html">AttackStop</a>
   <a id="Unit:CastCustomSpell" class="fn" href="../Unit/CastCustomSpell.html">CastCustomSpell</a>
@@ -57,6 +58,7 @@ document.write(`
   <a id="Unit:GetVehicle" class="fn" href="../Unit/GetVehicle.html">GetVehicle</a>
   <a id="Unit:GetVehicleKit" class="fn" href="../Unit/GetVehicleKit.html">GetVehicleKit</a>
   <a id="Unit:GetVictim" class="fn" href="../Unit/GetVictim.html">GetVictim</a>
+  <a id="Unit:HandleStatFlatModifier" class="fn" href="../Unit/HandleStatFlatModifier.html">HandleStatFlatModifier</a>
   <a id="Unit:HasAura" class="fn" href="../Unit/HasAura.html">HasAura</a>
   <a id="Unit:HasUnitState" class="fn" href="../Unit/HasUnitState.html">HasUnitState</a>
   <a id="Unit:HealthAbovePct" class="fn" href="../Unit/HealthAbovePct.html">HealthAbovePct</a>
@@ -155,6 +157,8 @@ document.write(`
   <a id="Unit:SetSheath" class="fn" href="../Unit/SetSheath.html">SetSheath</a>
   <a id="Unit:SetSpeed" class="fn" href="../Unit/SetSpeed.html">SetSpeed</a>
   <a id="Unit:SetStandState" class="fn" href="../Unit/SetStandState.html">SetStandState</a>
+  <a id="Unit:SetStatFlatModifier" class="fn" href="../Unit/SetStatFlatModifier.html">SetStatFlatModifier</a>
+  <a id="Unit:SetStatPctModifier" class="fn" href="../Unit/SetStatPctModifier.html">SetStatPctModifier</a>
   <a id="Unit:SetStunned" class="fn" href="../Unit/SetStunned.html">SetStunned</a>
   <a id="Unit:SetVisible" class="fn" href="../Unit/SetVisible.html">SetVisible</a>
   <a id="Unit:SetWaterWalk" class="fn" href="../Unit/SetWaterWalk.html">SetWaterWalk</a>

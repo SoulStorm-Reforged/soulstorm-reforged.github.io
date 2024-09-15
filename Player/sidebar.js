@@ -89,6 +89,7 @@ document.write(`
   <a id="Player:GetReputation" class="fn" href="../Player/GetReputation.html">GetReputation</a>
   <a id="Player:GetReputationRank" class="fn" href="../Player/GetReputationRank.html">GetReputationRank</a>
   <a id="Player:GetReqKillOrCastCurrentCount" class="fn" href="../Player/GetReqKillOrCastCurrentCount.html">GetReqKillOrCastCurrentCount</a>
+  <a id="Player:GetResetTalentsCost" class="fn" href="../Player/GetResetTalentsCost.html">GetResetTalentsCost</a>
   <a id="Player:GetRestBonus" class="fn" href="../Player/GetRestBonus.html">GetRestBonus</a>
   <a id="Player:GetSelectedPlayer" class="fn" href="../Player/GetSelectedPlayer.html">GetSelectedPlayer</a>
   <a id="Player:GetSelectedUnit" class="fn" href="../Player/GetSelectedUnit.html">GetSelectedUnit</a>
@@ -119,8 +120,11 @@ document.write(`
   <a id="Player:GroupInvite" class="fn" href="../Player/GroupInvite.html">GroupInvite</a>
   <a id="Player:HasAchieved" class="fn" href="../Player/HasAchieved.html">HasAchieved</a>
   <a id="Player:HasAtLoginFlag" class="fn" href="../Player/HasAtLoginFlag.html">HasAtLoginFlag</a>
+  <a id="Player:HasCasterSpec" class="fn" href="../Player/HasCasterSpec.html">HasCasterSpec</a>
   <a id="Player:HasGlyph" class="fn" href="../Player/HasGlyph.html">HasGlyph</a>
+  <a id="Player:HasHealSpec" class="fn" href="../Player/HasHealSpec.html">HasHealSpec</a>
   <a id="Player:HasItem" class="fn" href="../Player/HasItem.html">HasItem</a>
+  <a id="Player:HasMeleeSpec" class="fn" href="../Player/HasMeleeSpec.html">HasMeleeSpec</a>
   <a id="Player:HasPendingBind" class="fn" href="../Player/HasPendingBind.html">HasPendingBind</a>
   <a id="Player:HasQuest" class="fn" href="../Player/HasQuest.html">HasQuest</a>
   <a id="Player:HasQuestForGO" class="fn" href="../Player/HasQuestForGO.html">HasQuestForGO</a>
@@ -130,6 +134,7 @@ document.write(`
   <a id="Player:HasSpell" class="fn" href="../Player/HasSpell.html">HasSpell</a>
   <a id="Player:HasSpellCooldown" class="fn" href="../Player/HasSpellCooldown.html">HasSpellCooldown</a>
   <a id="Player:HasTalent" class="fn" href="../Player/HasTalent.html">HasTalent</a>
+  <a id="Player:HasTankSpec" class="fn" href="../Player/HasTankSpec.html">HasTankSpec</a>
   <a id="Player:HasTitle" class="fn" href="../Player/HasTitle.html">HasTitle</a>
   <a id="Player:InArena" class="fn" href="../Player/InArena.html">InArena</a>
   <a id="Player:InBattleground" class="fn" href="../Player/InBattleground.html">InBattleground</a>
@@ -193,7 +198,6 @@ document.write(`
   <a id="Player:ResetPetTalents" class="fn" href="../Player/ResetPetTalents.html">ResetPetTalents</a>
   <a id="Player:ResetSpellCooldown" class="fn" href="../Player/ResetSpellCooldown.html">ResetSpellCooldown</a>
   <a id="Player:ResetTalents" class="fn" href="../Player/ResetTalents.html">ResetTalents</a>
-  <a id="Player:ResetTalentsCost" class="fn" href="../Player/ResetTalentsCost.html">ResetTalentsCost</a>
   <a id="Player:ResetTypeCooldowns" class="fn" href="../Player/ResetTypeCooldowns.html">ResetTypeCooldowns</a>
   <a id="Player:ResurrectPlayer" class="fn" href="../Player/ResurrectPlayer.html">ResurrectPlayer</a>
   <a id="Player:RewardQuest" class="fn" href="../Player/RewardQuest.html">RewardQuest</a>
@@ -244,6 +248,7 @@ document.write(`
   <a id="Player:SetRestBonus" class="fn" href="../Player/SetRestBonus.html">SetRestBonus</a>
   <a id="Player:SetSheath" class="fn" href="../Player/SetSheath.html">SetSheath</a>
   <a id="Player:SetSkill" class="fn" href="../Player/SetSkill.html">SetSkill</a>
+  <a id="Player:SetSpellPower" class="fn" href="../Player/SetSpellPower.html">SetSpellPower</a>
   <a id="Player:SetTaxiCheat" class="fn" href="../Player/SetTaxiCheat.html">SetTaxiCheat</a>
   <a id="Player:SpawnBones" class="fn" href="../Player/SpawnBones.html">SpawnBones</a>
   <a id="Player:StartTaxi" class="fn" href="../Player/StartTaxi.html">StartTaxi</a>
