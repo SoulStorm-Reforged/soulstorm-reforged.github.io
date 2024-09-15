@@ -33,6 +33,7 @@ document.write(`
   <a id="Item:GetSpellTrigger" class="fn" href="../Item/GetSpellTrigger.html">GetSpellTrigger</a>
   <a id="Item:GetStatsCount" class="fn" href="../Item/GetStatsCount.html">GetStatsCount</a>
   <a id="Item:GetSubClass" class="fn" href="../Item/GetSubClass.html">GetSubClass</a>
+  <a id="Item:GetTemplate" class="fn" href="../Item/GetTemplate.html">GetTemplate</a>
   <a id="Item:HasQuest" class="fn" href="../Item/HasQuest.html">HasQuest</a>
   <a id="Item:IsArmorVellum" class="fn" href="../Item/IsArmorVellum.html">IsArmorVellum</a>
   <a id="Item:IsBag" class="fn" href="../Item/IsBag.html">IsBag</a>
