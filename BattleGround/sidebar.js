@@ -14,7 +14,7 @@ document.write(`
   <a id="BattleGround:GetMinPlayers" class="fn" href="../BattleGround/GetMinPlayers.html">GetMinPlayers</a>
   <a id="BattleGround:GetMinPlayersPerTeam" class="fn" href="../BattleGround/GetMinPlayersPerTeam.html">GetMinPlayersPerTeam</a>
   <a id="BattleGround:GetName" class="fn" href="../BattleGround/GetName.html">GetName</a>
-  <a id="BattleGround:GetPlayerInTeam" class="fn" href="../BattleGround/GetPlayerInTeam.html">GetPlayerInTeam</a>
+  <a id="BattleGround:GetPlayersInTeam" class="fn" href="../BattleGround/GetPlayersInTeam.html">GetPlayersInTeam</a>
   <a id="BattleGround:GetStatus" class="fn" href="../BattleGround/GetStatus.html">GetStatus</a>
   <a id="BattleGround:GetTypeId" class="fn" href="../BattleGround/GetTypeId.html">GetTypeId</a>
   <a id="BattleGround:GetWinner" class="fn" href="../BattleGround/GetWinner.html">GetWinner</a>
