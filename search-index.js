@@ -35,7 +35,7 @@ searchIndex["Aura"] = {
         [3, "GetMinPlayers", "", "Returns the minimum allowed <a class=\"mod\" href=\"Player/index.html\">Player</a> count of the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetMinPlayersPerTeam", "", "Returns the minimum allowed <a class=\"mod\" href=\"Player/index.html\">Player</a> count per team of the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetName", "", "Returns the name of the <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
-        [3, "GetPlayerInTeam", "", "Returns a table with all the current [Players] in the specific team"],
+        [3, "GetPlayersInTeam", "", "Returns a table with all the current <a class=\"mod\" href=\"Player/index.html\">Player</a> in the specific team"],
         [3, "GetStatus", "", "Returns the status of the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetTypeId", "", "Returns the type ID of the <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
         [3, "GetWinner", "", "Returns the winning team of the specific <a class=\"mod\" href=\"BattleGround/index.html\">BattleGround</a>."],
